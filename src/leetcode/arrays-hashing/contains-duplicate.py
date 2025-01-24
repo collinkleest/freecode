@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/contains-duplicate/description/
+
 from typing import List
 
 """
