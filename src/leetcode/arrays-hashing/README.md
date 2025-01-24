@@ -13,3 +13,7 @@ https://leetcode.com/problems/valid-anagram/description/
 - the easy / brute force solution is to sort both strings and check if they are the same
 - the more efficient solution is to add the frequency of both letters in the string to a hash table and keep track of how frequent
 - then we can check if the hash maps are the same, if they are then they are anagrams
+
+`two-sum.py`
+https://leetcode.com/problems/two-sum/description/
+- 
