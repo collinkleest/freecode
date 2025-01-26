@@ -14,6 +14,22 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return [i, j]
 
+
+"""
+using number difference to solve
+time complexity O(N)
+space complexity O(1)
+"""
+class SolutionV2:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        numMap = {}
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in numMap:
+                return [numMap[diff], i]
+            else:
+                numMap[nums[i]] = i
+
 """
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
