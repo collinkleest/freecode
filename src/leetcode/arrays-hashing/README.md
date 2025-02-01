@@ -22,3 +22,6 @@ https://leetcode.com/problems/two-sum/description/
 - brute force method, compare every number (not efficient O(n^2) time complexity)
 - faster method would be getting the difference and keeping track of numbers in a hashmap
 - if difference is in the hashmap then we know the current number + the difference number in the hashmap are our two numbers
+
+`group-anagrams.py`
+https://leetcode.com/problems/group-anagrams/
