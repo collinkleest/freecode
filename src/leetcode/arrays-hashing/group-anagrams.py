@@ -21,3 +21,26 @@ class Solution:
         for key in anaMap:
             grouped.append(anaMap[key])
         return grouped
+    
+"""
+simplified
+"""
+class SolutionV2:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        grouped = []
+        anaMap = {}
+        for s in strs:
+            ss = sorted(s)
+            ss = "".join(ss)
+            if ss in anaMap:
+                anaMap[ss].append(s)
+            else:
+                anaMap[ss] = [s]
+        for key in anaMap:
+            grouped.append(anaMap[key])
+        return grouped
+    
+
+"""
+faster solution
+"""
