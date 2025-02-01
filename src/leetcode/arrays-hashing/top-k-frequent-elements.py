@@ -28,3 +28,18 @@ class Solution:
             res.append(highestKey)
         return res
                 
+
+"""
+slightly faster using sorting of values
+"""
+class SolutionV2:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        numsMap = defaultdict(int)
+        for n in nums:
+            numsMap[n] += 1
+        sorted_dict = dict(sorted(numsMap.items(), key=lambda item: item[1], reverse=True))
+        sorted_list = list(sorted_dict.keys())
+        res = []
+        for i in range(k):
+            res.append(sorted_list[i])
+        return res
