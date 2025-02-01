@@ -28,3 +28,6 @@ https://leetcode.com/problems/group-anagrams/
 
 - sort each string and use hashmap to map sorted string -> array of strs therefore grouping the anagrams
 - this is the easiest solution and the first one i came across
+- **remember** a list is not hashable in python, we can convert to string or tuple to make it hashable
+- we can use a default dictionary from `collections` module to create a dict with a default value of an empty array like so `defaultdict(list)`
+- this will never raise a key error
