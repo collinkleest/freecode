@@ -27,6 +27,8 @@ class Solution:
 simplified
 time complexity O(m * n log(n))
 space complexity O(n * m)
+where n is the longest length of str[i]
+and m is the length of strs
 """
 class SolutionV2:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
@@ -36,3 +38,19 @@ class SolutionV2:
             anaMap[tuple(ss)].append(s)
         return list(anaMap.values())
           
+
+
+"""
+fastest
+time complexity O(n * m)
+space complexity O(n * m)
+"""
+class SolutionV3:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        anaMap = defaultdict(list)
+        for s in strs:
+            count_arr = [0] * 26
+            for c in s:
+                count_arr[ord(c) - ord('a')] += 1
+            anaMap[tuple(count_arr)].append(s)
+        return list(anaMap.values())
