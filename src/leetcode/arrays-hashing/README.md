@@ -25,3 +25,6 @@ https://leetcode.com/problems/two-sum/description/
 
 `group-anagrams.py`
 https://leetcode.com/problems/group-anagrams/
+
+- sort each string and use hashmap to map sorted string -> array of strs therefore grouping the anagrams
+- this is the easiest solution and the first one i came across
