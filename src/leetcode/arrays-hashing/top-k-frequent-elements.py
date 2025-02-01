@@ -31,6 +31,8 @@ class Solution:
 
 """
 slightly faster using sorting of values
+time complexity O(n log(n))
+space complexity O(n)
 """
 class SolutionV2:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
