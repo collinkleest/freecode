@@ -31,3 +31,6 @@ https://leetcode.com/problems/group-anagrams/
 - **remember** a list is not hashable in python, we can convert to string or tuple to make it hashable
 - we can use a default dictionary from `collections` module to create a dict with a default value of an empty array like so `defaultdict(list)`
 - this will never raise a key error
+
+`top-k-frequent-elements.py`
+https://leetcode.com/problems/top-k-frequent-elements/
