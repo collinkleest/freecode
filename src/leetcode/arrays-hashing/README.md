@@ -34,3 +34,9 @@ https://leetcode.com/problems/group-anagrams/
 
 `top-k-frequent-elements.py`
 https://leetcode.com/problems/top-k-frequent-elements/
+
+`majority-element.py`
+https://leetcode.com/problems/majority-element/
+
+- use a hashmap to count the total elements
+- loop through hashmap to see which element larger than `[n / 2]
