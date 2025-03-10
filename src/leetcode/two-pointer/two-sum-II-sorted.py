@@ -3,6 +3,8 @@
 from typing import List
 
 """
+initial implementation
+
 pointer on both ends of the array
 since we know the array is sorted we can then sum up our left and right pointers
 if the sum is larger than the target we know we need to move the left pointer
