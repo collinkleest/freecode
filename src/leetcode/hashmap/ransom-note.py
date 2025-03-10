@@ -1,6 +1,14 @@
 # https://leetcode.com/problems/ransom-note
 
 
+"""
+
+time complexity O(N)
+space complexity O(N)
+
+"""
+
+
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         ransomNoteMap, magazineMap = dict(), dict()
